@@ -10,7 +10,7 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 - BootStrap
 
 ### Wireframes
-[Weather Forecast](./img/wireframe.png)
+![screenshot](img/wireframe.png)
 
 ### Images of working App
 
