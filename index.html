@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- local CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Adding bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -15,9 +18,32 @@
     <title>🌤 Weather Forecast</title>
 </head>
 
-<body>
+<body class="container">
+    <h1 class="jumbotron">🌤 Weather Forecast</h1>
+    <table id="homes" class="table table-striped">
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Temperature</th>
+                <th>Feels Like</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td>27374 Matterhorn Drive</td>
+                <td>1,664</td>
+                <td>3</td>
+                <td>2</td>
+                <td>$279,500</td>
+                <td><button class="btn btn-xs btn-danger">Remove</button></td> -->
+            </tr>
+        </tbody>
+    </table>
     <!-- local JS -->
     <script defer src="./js/script.js"></script>
 </body>
 
 </html>
+
