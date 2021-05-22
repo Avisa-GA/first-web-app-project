@@ -19,5 +19,4 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 [Click here](https://avisa-ga.github.io/first-web-app-project/)
 
 ## Future Enhancement
-- let user pick the city
-- according to what city user pick will show 5 days weather
+- The abilty to share the result with other users.
