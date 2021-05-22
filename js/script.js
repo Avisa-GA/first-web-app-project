@@ -1,17 +1,21 @@
 /*----- constants -----*/
-/*----- app's state (variables) -----*/
-let weatherData, userInput;
-/*----- cached element references -----*/
-const apiAddress = `http://api.openweathermap.org/data/2.5/forecast?q=houston&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial`
 const $table = $(`#homes tbody`)
 const $cityName = $(`th#city`)
 const $mainContent = $('tbody')
+/*----- app's state (variables) -----*/
+let weatherData, userInput;
+
+/*----- cached element references -----*/
+
 /*----- event listeners -----*/
 $('form').on('submit', handleGetData)
 /*----- functions -----*/
 
-$('h1').addClass('text-center');
+init()
 
+function init() {
+    $('h1').addClass('text-center');
+}
 
 function handleGetData(event) {
 
