@@ -1,21 +1,45 @@
-
 /*----- constants -----*/
 /*----- app's state (variables) -----*/
-let weatherData;
-let temperature, feelsLike, descript, cityName
+let weatherData, userInput;
 /*----- cached element references -----*/
 const apiAddress = `http://api.openweathermap.org/data/2.5/forecast?q=houston&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial`
 const $table = $(`#homes tbody`)
+const $cityName = $(`th#city`)
+const $mainContent = $('tbody')
 /*----- event listeners -----*/
+$('form').on('submit', handleGetData)
 /*----- functions -----*/
 
 $('h1').addClass('text-center');
 
-const response = $.ajax({url: 'http://api.openweathermap.org/data/2.5/forecast?q=houston&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial'}).then( (data) => {
-    // success
-   cityName = data['city']['name']
 
-    data['list'].forEach(function(element, idx) {
+function handleGetData(event) {
+
+    $mainContent.empty()
+
+    event.preventDefault()
+
+    userInput = $('input#search').val()
+
+    const response = $.ajax({
+        url: `http://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial`
+    }).then((data) => {
+
+            // success
+            weatherData = data
+            render()
+        },
+        (error) => {
+            console.log('Bad Request: ', error)
+        }
+    )
+    $('input#search').val('')
+}
+
+function render() {
+    $cityName.text(`${weatherData['city']['name']}`)
+
+    weatherData['list'].forEach(function (element, idx) {
         $table.append(`
         <tr>
         <td>Day ${idx + 1}</td>
@@ -28,19 +52,4 @@ const response = $.ajax({url: 'http://api.openweathermap.org/data/2.5/forecast?q
     }</td>`)
 
     });
-
-    // $table.append(` 
-    //     <tr>
-    //     <td>${cityName}</td>
-    //     <td>${temperature}</td>
-    //     <td>${feelsLike}</td>
-    //     <td>${descript}</td>
-    // </tr>
-    // `);
-
-},
-    (error) => {
-        console.log('Bad Request: ', error)
-    }
-)
-
+}

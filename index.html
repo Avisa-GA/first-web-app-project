@@ -23,7 +23,7 @@
     <table id="homes" class="table table-striped">
         <thead>
             <tr>
-                <th>City</th>
+                <th id='city'>City</th>
                 <th>Temperature</th>
                 <th>Feels Like</th>
                 <th>Description</th>
@@ -32,15 +32,14 @@
         </thead>
         <tbody>
             <tr>
-                <!-- <td>27374 Matterhorn Drive</td>
-                <td>1,664</td>
-                <td>3</td>
-                <td>2</td>
-                <td>$279,500</td>
-                <td><button class="btn btn-xs btn-danger">Remove</button></td> -->
+                
             </tr>
         </tbody>
     </table>
+    <form>
+        <input id='search' type="text" placeholder="City Name" />
+        <input type="submit" value="Get Weather Info" />
+    </form>
     <!-- local JS -->
     <script defer src="./js/script.js"></script>
 </body>
