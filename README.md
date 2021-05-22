@@ -16,7 +16,7 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 
 ### Getting Started
 
-[Click here](img/appScreenShot.png) 
+![Click here](img/appScreenShot.png) 
 
 ## Future Enhancement
 - let user pick the city
