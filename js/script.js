@@ -1,7 +1,7 @@
 /*----- constants -----*/
 const $table = $(`#homes tbody`)
 const $cityName = $(`th#city`)
-const $mainContent = $('tbody')
+const $mainContent = $('tbody#dataBody')
 /*----- app's state (variables) -----*/
 let weatherData, userInput;
 
