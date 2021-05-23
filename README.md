@@ -13,9 +13,9 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 ![screenshot](img/weatherApp-wireframe.png)
 
 ### Images of working App
-![screenshotOne](img/oneScreen.png)![screenshotTwo](img/twoScreen.png)
+![firstScreen](img/firstScreen.png)![secondScreen](img/twoScreen.png)
 ##
-![screenshotThree](img/thirdScreen.png)![screenshotFour](img/fourthScreen.png)
+![thirdScreen](img/thirdScreen.png)![fourthScreen](img/fourthScreen.png)
 
 
 ### Getting Started
