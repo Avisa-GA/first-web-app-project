@@ -6,7 +6,7 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 - HTML5
 - CSS3
 - JavaScript/jQuery
-- [Weather Forecast API](https://openweathermap.org/forecast16)
+- [Weather Forecast API](http://openweathermap.org/forecast16)
 - BootStrap
 
 ### Wireframes

@@ -26,7 +26,7 @@ function handleGetData(event) {
     userInput = $('input#search').val()
 
     const response = $.ajax({
-        url: `http://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial`
+        url: `https://api.openweathermap.org/data/2.5/forecast?q=${userInput}&cnt=5&appid=c8f827699e922be9a613a16ce1a00f37&units=imperial`
     }).then((data) => {
 
             // success
