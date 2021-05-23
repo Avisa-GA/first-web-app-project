@@ -12,6 +12,7 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 ### Wireframes
 ![screenshot](img/weatherApp-wireframe.png)
 
+##
 
 ### Images of working App
 #### Mobile version
