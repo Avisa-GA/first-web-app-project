@@ -46,7 +46,7 @@ function render() {
     weatherData['list'].forEach(function (element, idx) {
         $table.append(`
         <tr>
-        <td>Day ${idx + 1}</td>
+        <td>${idx + 1} )</td>
         <td>${element['main']['temp']}</td>
         <td>${element['main']['feels_like']}</td>
         
