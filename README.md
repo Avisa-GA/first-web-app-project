@@ -15,10 +15,10 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 ##
 
 ### Images of working App
- <p style='color:green'>Desktop version</p>
+ #### <p style='color:green'>Desktop version</p>
 ![firstScreen](img/firstScreen.png) 
 ![thirdScreen](img/thirdScreen.png)
- <p style='color:green'>Mobile version</p>
+ #### <p style='color:green'>Mobile version</p>
 ![secondScreen](img/secondScreen.png)
 ![fourthScreen](img/fourthScreen.png)
 ##
