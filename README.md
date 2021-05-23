@@ -20,7 +20,7 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 ![thirdScreen](img/thirdScreen.png)
 ![fourthScreen](img/fourthScreen.png)
 
-### Getting Started
+## Getting Started
 [Click here](https://avisa-ga.github.io/first-web-app-project/)
 
 ## Future Enhancement
