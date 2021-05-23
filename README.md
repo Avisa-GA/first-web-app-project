@@ -13,12 +13,14 @@ A simple web app for visualizing Weather Forecast up to 5 days.
 ![screenshot](img/weatherApp-wireframe.png)
 
 ### Images of working App
-
+#### Mobile version
 ![firstScreen](img/firstScreen.png) 
-![secondScreen](img/secondScreen.png)
-##
 ![thirdScreen](img/thirdScreen.png)
+#### Desktop
+![secondScreen](img/secondScreen.png)
 ![fourthScreen](img/fourthScreen.png)
+##
+
 
 ## Getting Started
 [Click here](https://avisa-ga.github.io/first-web-app-project/)
