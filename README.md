@@ -16,8 +16,8 @@ A simple web app for visualizing Weather Forecast up to 15 hours, once every 3 h
 
 ### Images of working App
  #### Desktop version
-![firstScreen](img/firstScreen.png) 
-![thirdScreen](img/thirdScreen.png)
+![firstScreen](./img/firstScreen.png) 
+![thirdScreen](./img/thirdScreen.png)
  #### Mobile version
 ![secondScreen](img/secondScreen.png)
 ![fourthScreen](img/fourthScreen.png)
