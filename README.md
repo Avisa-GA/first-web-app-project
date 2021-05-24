@@ -1,6 +1,6 @@
 # 🌤 Weather Forecast
 
-A simple web app for visualizing Weather Forecast up to 5 days.
+A simple web app for visualizing Weather Forecast up to 15 hours, once every 3 hours.
 
 ## Technologies
 - HTML5
