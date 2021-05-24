@@ -41,6 +41,7 @@ function handleGetData(event) {
 }
 
 function render() {
+
     $cityName.text(`${weatherData['city']['name']}`)
 
     weatherData['list'].forEach(function (element, idx) {
@@ -49,11 +50,10 @@ function render() {
         <td>${idx + 1} )</td>
         <td>${element['main']['temp']}</td>
         <td>${element['main']['feels_like']}</td>
-        
       <td>${element['weather'].map(function(elem) {
             return elem['description']
         })
-    }</td>`)
+    }</td></tr>`)
 
     });
 }
