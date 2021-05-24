@@ -41,8 +41,22 @@
         <input type="submit" value="Get Weather Info" />
     </form>
     <!-- local JS -->
-    <script defer src="./js/script.js"></script>
     <br>
+    <br>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script>
+        function initMap() {
+            let uluru = {lat: -25.344, lng: 131.036}
+            let map = new google.maps.Map( document.getElementById('map'), {zoom: 4, center: uluru})
+            // let marker = new google.maps.Marker({position: uluru, map: map})
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3w8m0rpalzlGMf-eify-x3P9mqVQ2RJ8"
+    ></script>
+    <script defer src="./js/script.js"></script>
     <br>
     <footer>
         <p>Copyright &copy; All Rights Reserved 2021 🌤 Weather forecast

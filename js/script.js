@@ -2,6 +2,7 @@
 const $table = $(`#homes tbody`)
 const $cityName = $(`th#city`)
 const $mainContent = $('tbody#dataBody')
+const $mainBody = $('body')
 /*----- app's state (variables) -----*/
 let weatherData, userInput;
 
@@ -32,6 +33,7 @@ function handleGetData(event) {
             // success
             weatherData = data
             render()
+            initMap()
         },
         (error) => {
             console.log('Bad Request: ', error)
@@ -56,4 +58,20 @@ function render() {
     }</td></tr>`)
 
     });
+}
+
+
+function initMap() {
+    let place = {
+        lat: weatherData['city']['coord']['lat'],
+        lng: weatherData['city']['coord']['lon']
+    }
+    let map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: place})
+
+    $mainBody.append(`
+    <script>
+    ${new google.maps.Marker({position: place, map: map})}
+    </script>
+    `)
+    // let marker = new google.maps.Marker({position: place, map: map})
 }

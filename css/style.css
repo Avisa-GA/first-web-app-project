@@ -7,3 +7,11 @@
     justify-content: center;
     height: 50px;
 }
+
+#map {
+    display: flex;
+    padding-top: 25%;
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+}
