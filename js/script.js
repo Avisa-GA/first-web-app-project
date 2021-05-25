@@ -4,11 +4,18 @@ $(function () {
     const $cityName = $(`th#city`)
     const $mainContent = $('tbody#dataBody')
     const $mainBody = $('body')
+    const defaultCities = [ 
+        {lat: 32.779167, lng: -96.808891},
+        {lat: 40.6976637, lng: -74.119763},
+        {lat: 29.749907, lng: -95.358421},
+        {lat: 39.099724, lng: -94.578331},
+        {lat:34.0522, lng: -118.2437}
+    ]
     /*----- app's state (variables) -----*/
     let weatherData, userInput;
-
+     
     /*----- cached element references -----*/
-
+    let randomValue = defaultCities[Math.floor(defaultCities.length * Math.random())]
     /*----- event listeners -----*/
 
     $('form').on('submit', handleGetData)
@@ -17,7 +24,10 @@ $(function () {
 
 
     init()
-    initMap(40.6976637, -74.119763)
+
+    initMap(randomValue.lat, randomValue.lng)
+
+    // initMap(40.6976637, -74.119763)
 
     function init() {
         $('h1').addClass('text-center');
@@ -47,7 +57,7 @@ $(function () {
         $('input#search').val('')
     }
 
-    
+
     function render() {
 
         $cityName.text(`${weatherData['city']['name']}`)
@@ -61,7 +71,8 @@ $(function () {
       <td>${element['weather'].map(function(elem) {
             return elem['description']
         })
-    }</td></tr>`)
+        }</td>
+    </tr>`)
 
         });
     }

@@ -1,3 +1,5 @@
+
+<!-- *********** -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,39 +24,37 @@
 <body class="container">
     <h1 class="jumbotron">🌤 Weather Forecast</h1>
 </body>
-    <table id="homes" class="table table-striped">
-        <thead>
-            <tr>
-                <th id='city' data-bs-toggle='modal' data-bs-target='#exampleModal'>City</th>
-                <th>Temperature</th>
-                <th>Feels Like</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody id='dataBody'>
-            <tr>
+<table id="homes" class="table table-striped">
+    <thead>
+        <tr>
+            <th id='city' data-bs-toggle='modal' data-bs-target='#exampleModal'>City</th>
+            <th>Temperature</th>
+            <th>Feels Like</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody id='dataBody'>
+        <tr>
 
-            </tr>
-        </tbody>
-    </table>
-    <form>
-        <p>Weather forecast that shows every 3 hours:</p>
-        <input id='search' type="text" placeholder="City Name" />
-        <input type="submit" value="Get Weather Info" />
-    </form>
-    <!-- local JS -->
-    <br>
-    <br>
-    <div id="map"></div>
+        </tr>
+    </tbody>
+</table>
+<form>
+    <p>Weather forecast that shows every 3 hours:</p>
+    <input id='search' type="text" placeholder="City Name" />
+    <input type="submit" value="Get Weather Info" />
+</form>
+<!-- local JS -->
+<br>
+<br>
+<div id="map"></div>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 
-    <br>
-    <footer>
-        <p>Copyright &copy; All Rights Reserved 2021 🌤 Weather forecast
-        </p>
-    </footer>
-
- 
+<br>
+<footer>
+    <p>Copyright &copy; All Rights Reserved 2021 🌤 Weather forecast
+    </p>
+</footer>
 
 </html>
