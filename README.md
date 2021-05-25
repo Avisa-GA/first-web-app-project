@@ -1,6 +1,6 @@
 # 🌤 Weather Forecast
 
-A simple web app for visualizing Weather Forecast up to 15 hours, once every 3 hours.
+My project is about to show every 3 hours for the next 15 hours weather forecast of selected city by the user. and also user will be able to see the location in the map.
 
 ## Technologies
 - HTML5
