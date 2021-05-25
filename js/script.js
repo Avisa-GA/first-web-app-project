@@ -17,7 +17,7 @@ $(function () {
 
 
     init()
-    init_newYork_Map()
+    initMap(40.6976637,-74.119763)
 
     function init() {
         $('h1').addClass('text-center');
@@ -38,7 +38,7 @@ $(function () {
                 // success
                 weatherData = data
                 render()
-                initMap()
+                initMap(weatherData['city']['coord']['lat'], weatherData['city']['coord']['lon'])
             },
             (error) => {
                 console.log('Bad Request: ', error)
@@ -66,19 +66,12 @@ $(function () {
     }
 
 
-    function initMap() {
-
-        let newYork = {
-            lat: 40.6976637,
-            lng: -74.119763
-        }
+    function initMap(latitude, longitude) {
 
         let place = {
-            lat: weatherData['city']['coord']['lat'],
-            lng: weatherData['city']['coord']['lon']
+            lat: latitude,
+            lng: longitude
         }
-
-        let places = [newYork, place]
 
         let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 10,
@@ -91,29 +84,6 @@ $(function () {
     </script>
     `)
     }
-
-    function init_newYork_Map() {
-
-        let newYork = {
-            lat: 40.6976637,
-            lng: -74.119763
-        }
-
-       
-
-        let map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 10,
-            center: newYork
-        })
-
-        $mainBody.append(`
-    <script>
-    ${new google.maps.Marker({position: newYork, map: map})}
-    </script>
-    `)
-    }
-
-
 
 
 })
