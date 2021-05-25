@@ -15,7 +15,9 @@ $(function () {
 
     /*----- functions -----*/
 
+
     init()
+    init_newYork_Map()
 
     function init() {
         $('h1').addClass('text-center');
@@ -66,10 +68,17 @@ $(function () {
 
     function initMap() {
 
+        let newYork = {
+            lat: 40.6976637,
+            lng: -74.119763
+        }
+
         let place = {
             lat: weatherData['city']['coord']['lat'],
             lng: weatherData['city']['coord']['lon']
         }
+
+        let places = [newYork, place]
 
         let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 10,
@@ -83,4 +92,29 @@ $(function () {
     `)
     }
 
+    function init_newYork_Map() {
+
+        let newYork = {
+            lat: 40.6976637,
+            lng: -74.119763
+        }
+
+       
+
+        let map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: newYork
+        })
+
+        $mainBody.append(`
+    <script>
+    ${new google.maps.Marker({position: newYork, map: map})}
+    </script>
+    `)
+    }
+
+
+
+
 })
+
