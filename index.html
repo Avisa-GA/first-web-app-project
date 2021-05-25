@@ -13,16 +13,19 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3w8m0rpalzlGMf-eify-x3P9mqVQ2RJ8">
+    </script>
+    <script defer src="./js/script.js"></script>
     <title>🌤 Weather Forecast</title>
 </head>
 
 <body class="container">
     <h1 class="jumbotron">🌤 Weather Forecast</h1>
+</body>
     <table id="homes" class="table table-striped">
         <thead>
             <tr>
-                <th id='city'>City</th>
+                <th id='city' data-bs-toggle='modal' data-bs-target='#exampleModal'>City</th>
                 <th>Temperature</th>
                 <th>Feels Like</th>
                 <th>Description</th>
@@ -46,14 +49,12 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3w8m0rpalzlGMf-eify-x3P9mqVQ2RJ8">
-    </script>
-    <script defer src="./js/script.js"></script>
     <br>
     <footer>
         <p>Copyright &copy; All Rights Reserved 2021 🌤 Weather forecast
         </p>
     </footer>
-</body>
+
+ 
 
 </html>
