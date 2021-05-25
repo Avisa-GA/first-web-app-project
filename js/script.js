@@ -17,7 +17,7 @@ $(function () {
 
 
     init()
-    initMap(40.6976637,-74.119763)
+    initMap(40.6976637, -74.119763)
 
     function init() {
         $('h1').addClass('text-center');
@@ -47,6 +47,7 @@ $(function () {
         $('input#search').val('')
     }
 
+    
     function render() {
 
         $cityName.text(`${weatherData['city']['name']}`)
@@ -87,4 +88,3 @@ $(function () {
 
 
 })
-
