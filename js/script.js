@@ -15,7 +15,7 @@ $(function () {
     let weatherData, userInput;
      
     /*----- cached element references -----*/
-    let randomValue = defaultCities[Math.floor(defaultCities.length * Math.random())]
+    let randomValue = defaultCities[Math.floor(Math.random() * defaultCities.length)]
     /*----- event listeners -----*/
 
     $('form').on('submit', handleGetData)

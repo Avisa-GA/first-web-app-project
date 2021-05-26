@@ -8,7 +8,7 @@ and when my app run for the first time map will show the random city location in
 - CSS3
 - JavaScript/jQuery
 - [Weather Forecast API](http://openweathermap.org/forecast16)
-- BootStrap
+- [Bootstrap](https://getbootstrap.com)
 
 ### Wireframes
 ![screenshot](img/weatherApp-wireframe.png)
