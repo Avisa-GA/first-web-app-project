@@ -87,11 +87,14 @@ $(function () {
             zoom: 10,
             center: place
         })
-
+       try {
         new google.maps.Marker( {
             position: place,
             map
         })
+    } catch (error) {
+           console.log('can not catch the location')
+    }
     }
 
 
