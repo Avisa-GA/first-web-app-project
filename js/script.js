@@ -101,6 +101,7 @@ $(function () {
             zoom: 10,
             center: place
         })
+        //  I add try - catch to get the error from network
         try {
             new google.maps.Marker({
                 position: place,
