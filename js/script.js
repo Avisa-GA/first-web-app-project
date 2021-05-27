@@ -4,16 +4,30 @@ $(function () {
     const $cityName = $(`th#city`)
     const $mainContent = $('tbody#dataBody')
     const $mainBody = $('body')
-    const defaultCities = [ 
-        {lat: 32.779167, lng: -96.808891},
-        {lat: 40.6976637, lng: -74.119763},
-        {lat: 29.749907, lng: -95.358421},
-        {lat: 39.099724, lng: -94.578331},
-        {lat:34.0522, lng: -118.2437}
+    const defaultCities = [{
+            lat: 32.779167,
+            lng: -96.808891
+        },
+        {
+            lat: 40.6976637,
+            lng: -74.119763
+        },
+        {
+            lat: 29.749907,
+            lng: -95.358421
+        },
+        {
+            lat: 39.099724,
+            lng: -94.578331
+        },
+        {
+            lat: 34.0522,
+            lng: -118.2437
+        }
     ]
     /*----- app's state (variables) -----*/
     let weatherData, userInput;
-     
+
     /*----- cached element references -----*/
     let randomValue = defaultCities[Math.floor(Math.random() * defaultCities.length)]
     /*----- event listeners -----*/
@@ -87,14 +101,14 @@ $(function () {
             zoom: 10,
             center: place
         })
-       try {
-        new google.maps.Marker( {
-            position: place,
-            map
-        })
-    } catch (error) {
-           console.log('can not catch the location')
-    }
+        try {
+            new google.maps.Marker({
+                position: place,
+                map
+            })
+        } catch (error) {
+            console.log('can not catch the location')
+        }
     }
 
 
