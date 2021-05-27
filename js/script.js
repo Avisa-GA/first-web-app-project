@@ -27,8 +27,6 @@ $(function () {
 
     initMap(randomValue.lat, randomValue.lng)
 
-    // initMap(40.6976637, -74.119763)
-
     function init() {
         $('h1').addClass('text-center');
     }
@@ -90,11 +88,10 @@ $(function () {
             center: place
         })
 
-        $mainBody.append(`
-    <script>
-    ${new google.maps.Marker({position: place, map: map})}
-    </script>
-    `)
+        new google.maps.Marker( {
+            position: place,
+            map
+        })
     }
 
 
