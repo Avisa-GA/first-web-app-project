@@ -10,7 +10,7 @@ and when my app run for the first time map will show the random city location in
 - [Weather Forecast API](http://openweathermap.org/forecast16)
 - [Bootstrap](https://getbootstrap.com)
 
-### Wireframes
+### Wireframe
 ![screenshot](img/weatherApp-wireframe.png)
 
 ##
